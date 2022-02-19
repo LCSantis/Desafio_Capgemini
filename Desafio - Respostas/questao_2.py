@@ -18,13 +18,14 @@ adicionados para uma string qualquer ser considerada segura.
 """
 
 print("Verificador de senhas fortes!\n"
-	  "Para criar uma senha forte siga as intruções:\n"
+	  "\nPara criar uma senha forte siga as intruções:\n"
 	  	"- Possui no mínimo 6 caracteres.\n"
 		"- Contém no mínimo 1 digito.\n"
 		"- Contém no mínimo 1 letra em minúsculo.\n"
 		"- Contém no mínimo 1 letra em maiúsculo.\n"
 		"- Contém no mínimo 1 caractere especial. Os caracteres especiais são: !@#$%^&*()-+")
 while True:
+	print()
 	while True:
 		senha = input("Digite uma nova senha:")
 		numeros = strUpper = strLower = especiais = 0
@@ -49,3 +50,5 @@ while True:
 	resposta = input("Deseja testar outra senha? [s/n]:").strip()[0].lower()
 	if resposta == "n":
 		break
+
+print("\nFIM!!!")
